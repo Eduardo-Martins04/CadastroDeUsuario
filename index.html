@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.12/jquery.mask.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#telefone').mask('(00) 00000-0000');
+        });
+    </script>
+    <title>Crud</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo_size_invert.png" alt="">
+        <h1>Cadastro de Usuários</h1>
+        <i class="fa-solid fa fa-user fa-3x"></i>
+    </header>
+    <br>
+    <main>
+        <fieldset>
+            <legend>Cadastro de Usuários</legend>
+            <form class="formCadastro">
+                <ul>
+                    <li>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </li>
+                    <li>
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" name="telefone" id="telefone">
+                    </li>
+                    <li>
+                        <input type="submit" value="Adicionar" class="btnAdicionar" id="btnAdicionar">
+                    </li>
+                </ul>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Usuários Cadastrados</legend>
+            <table id="tblResultado">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Opções</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </fieldset>
+        <div>
+            <input type="submit" value="Limpar Cadastros" class="btnLimpar" id="btnLimpar">
+        </div>
+    </main>
+</body>
+
+</html>

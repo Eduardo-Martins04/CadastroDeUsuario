@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+header{
+    border-bottom: 1px solid black;
+    background-color: deepskyblue;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+header h1{
+    text-align: center;
+    flex-grow: 1;
+}
+header img{
+    margin-left: 20px;
+}
+
+header i {
+    height: 80px;
+    width: 80px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+fieldset{
+    margin: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+   
+}
+
+input {
+    height: 25px;
+}
+
+.btnAdicionar{
+    height: 32px;
+    background-color: lightgreen;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90px;
+}
+
+#tblResultado {
+    width: 100%;
+    text-align: left;
+}
+
+thead tr th{
+    font-size: 18px;
+}
+
+tbody tr td i{
+    padding: 5px;
+}
+
+tbody tr td i.btnEditar{
+    padding: 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+tbody tr td i{
+    padding: 5px;
+    color: rgb(202, 43, 43);
+    cursor: pointer;
+}
+
+.btnAdicionar{
+    height: 32px;
+    background-color: lightgreen;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 90px;
+}
+.btnLimpar{
+    height: 32px;
+    background-color: lightcoral;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+
+
